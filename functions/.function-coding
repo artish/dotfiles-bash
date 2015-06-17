@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Silent simple irb shortut 
+function sirb () {
+   irb --simple-prompt --noecho
+}
+
+function r () {
+ ruby $1 
+}
+
+# Quickly generate md5 hash
+function md5 () {
+  if [[ -z $@ ]]; then
+    echo "md5 Your String or Password"
+    echo "Use two spaces before the command to hide from history"
+    return
+  fi
+  echo -n "$@" | openssl md5
+}
