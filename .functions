@@ -1,6 +1,6 @@
 #!/bin/bash
 
-local functions_path="$DOTFILES/functions/"
+functions_path="$DOTFILES/functions/"
 
 . "$functions_path.function-navigation_and_files"
 . "$functions_path.function-compression"
